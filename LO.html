@@ -1,0 +1,24 @@
+<html>
+  <script src="https://fb--sfull.sandbox.my.site.com/lightning/lightning.out.js"></script>
+  <div data-lightning-out="true"></div>
+  <script>
+    const appName = 'c:LOWPSF';
+    const componentName = '';
+    const lightningEndpoint = '';
+    const targetElement = document.querySelector("[data-lightning-out]");
+    const componentAttributes = {};
+    console.log('lightning app being created');
+    $Lightning.use(
+      appName,
+      function() {
+        console.log('lightning component being created');
+        $Lightning.createComponent(
+          componentName,
+          componentAttributes,
+          targetElement,
+          function (cmp) {
+            console.log('lightning component created');
+        );
+    );
+  </script>
+</html>
